@@ -1,9 +1,10 @@
 
 import React from 'react'
 import {connect} from 'react-redux'
-import {Result, List, WhiteSpace} from 'antd-mobile'
-//import browserCookie from 'browser-cookies'
-/*import {logoutSubmit} from '../../redux/user.redux'*/
+import {Result, List, WhiteSpace, Modal} from 'antd-mobile'
+import browserCookie from 'browser-cookies'
+import {logoutSubmit} from '../../redux/user.redux'
+import {Redirect} from 'react-router-dom'
 
 
 /*function hello(){
@@ -48,23 +49,21 @@ class Hello extends React.Component{
 
 @connect(
     state=>state.user,
-    null
+    {logoutSubmit}
 )
 class UserSetting extends React.Component{
-
+    
     logout=()=>{
-
-        console.log("logout")
-       /*  const alert = Modal.alert
-
-         alert('LogOut', 'Are you sure???', [
-             { text: 'Cancel', onPress: () => console.log('cancel') },
-             { text: 'Ok', onPress: () => {
-                     browserCookie.erase('userid')
-
-                 }}
-
-         ])*/
+        // browserCookie.erase('userid')
+        // window.location.href= window.location.href
+        const alert = Modal.alert
+        alert('logout', 'Are you sure to logout?', [
+            {text: 'Cancel', onPress: ()=> console.log('cancel')},
+            {text: 'OK', onPress: ()=> {
+                browserCookie.erase('userid')
+                this.props.logoutSubmit()
+            } }
+        ])
     }
 
      render(){
@@ -73,9 +72,8 @@ class UserSetting extends React.Component{
          const Brief = Item.Brief
 
          return  props.user? (
-
+            
                  <div>
-
                     <Result
                          img={<img src={require(`../img/${props.avatar}.png`)} style={{width:70}} alt="avatar" />}
                          title={props.user}
@@ -90,11 +88,11 @@ class UserSetting extends React.Component{
                      </List>
                      <WhiteSpace></WhiteSpace>
                      <List>
-                         <Item onClick={()=>this.logout()}>LogOut</Item>
+                         <Item onClick={this.logout}>LogOut</Item>
                      </List>
 
                  </div>
-             ):null
+             ):<Redirect to={props.redirectTo}/>
      }
 }
 

@@ -1,8 +1,11 @@
 import axios from "axios";
 
+
+
 const USER_LIST = 'USER_LIST'
 const initState ={
     userlist:[]
+
 }
 
 export function chatUser(state=initState, action) {

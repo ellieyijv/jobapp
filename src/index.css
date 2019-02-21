@@ -45,5 +45,12 @@ code {
 }
 
 .stick-footer{
-    padding-bottom: 10px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.am-tab-bar{
+    height: auto !important;
 }

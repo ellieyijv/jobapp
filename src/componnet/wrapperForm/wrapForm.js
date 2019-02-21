@@ -12,7 +12,7 @@ export default function wrapForm(Comp){
            this.setState({
                 [key]: value
             })
-            console.log(key, value)
+            
         }
         render(){
             return(

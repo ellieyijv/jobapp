@@ -6,23 +6,24 @@ import {Switch, Route} from 'react-router-dom'
 import Boss from '../boss/Boss'
 import Seeker from '../seeker/Seeker'
 import UserSetting from "../user/UserSetting";
-
-
-
-function Message(){
-    return <h2>massage page</h2>
-
-}
-
+import Message from "../msg/msg"
+import { getMsgList, recvMsg } from "../../redux/chat.redux"
 
 
 
 @connect(
-    state=>state
+    state=>state,
+    {getMsgList, recvMsg}
 )
 class DashBoard extends React.Component{
-
-
+    componentDidMount(){
+        if(!this.props.chat.chatmsg.length){
+            this.props.getMsgList()
+            this.props.recvMsg()
+            console.log('dashboard recv')
+        }
+       
+    }
     render(){
         const {pathname} = this.props.location
         const user = this.props.user
@@ -63,7 +64,7 @@ class DashBoard extends React.Component{
                         ))}
                     </Switch>
                 </div>
-               <NavLinkBar data={navList}></NavLinkBar>
+               <NavLinkBar  data={navList}></NavLinkBar>
            </div>
         );
     }
