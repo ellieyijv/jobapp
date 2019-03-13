@@ -7,15 +7,17 @@ import {loadData} from "../../redux/user.redux";
 @withRouter
 @connect (
     null,
-        {loadData}
+    {loadData}
 )
 class AuthRoute extends React.Component{
     componentDidMount(){
         const publicList = ['/login', '/register']
-        const pathname = this.props.location.pathname
+        const pathname = this.props.location.pathname  
         if(publicList.indexOf(pathname)>-1){
+            console.log('come hear')
             return null
         }
+       
         //get user info
         axios.get('/user/info').then(res=>{
                 if(res.status === 200){
@@ -26,7 +28,7 @@ class AuthRoute extends React.Component{
                        this.props.history.push('/login')
                     }
                     console.log(res.data)
-                }
+                } 
         })
         //check if login
         //get current url, if login no need to redirect

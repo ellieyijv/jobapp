@@ -8,6 +8,7 @@ import Seeker from '../seeker/Seeker'
 import UserSetting from "../user/UserSetting";
 import Message from "../msg/msg"
 import { getMsgList, recvMsg } from "../../redux/chat.redux"
+import Redirect from 'react-router/es/Redirect';
 
 
 
@@ -22,10 +23,15 @@ class DashBoard extends React.Component{
             this.props.recvMsg()
             console.log('dashboard recv')
         }
-       
+        
     }
+
+    
     render(){
-        const {pathname} = this.props.location
+        const pathname = this.props.location.pathname
+        if(pathname === '/'){
+            return <Redirect to="/login"></Redirect> 
+        }
         const user = this.props.user
         const navList = [
             {path: '/boss',
@@ -54,7 +60,9 @@ class DashBoard extends React.Component{
                 title:'Personal Setting',
                 component: UserSetting
             }]
+       
         return (
+          
            <div>
                <NavBar className='fixed-header' mode='dark'>{navList.find(v=>v.path===pathname).title}</NavBar>
                 <div style={{marginTop:45}}>

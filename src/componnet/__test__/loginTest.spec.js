@@ -21,7 +21,7 @@ describe(`The Question Detail Component`, ()=>{
             resolve=>setTimeout(resolve, 1500)
         )
     })
-    it.only("async test 3",
+    it.skip("async test 3, the demo import delay from redux-saga",
              async ()=>await delay(100)  
         )           
     afterEach(()=>{

@@ -3,10 +3,10 @@ import io from 'socket.io-client'
 import { List, InputItem, NavBar, Icon } from 'antd-mobile'
 import { connect } from 'react-redux'
 import {  sendMsg, getMsgList, recvMsg, readMsg  } from "../../redux/chat.redux"
-import ListItem from 'antd-mobile/lib/list/ListItem';
+// import ListItem from 'antd-mobile/lib/list/ListItem';
 import { getChatId } from '../../util';
 
-const socket = io('http://localhost:9093');
+//const socket = io('http://localhost:9093');
 
 @connect(
     state => state,

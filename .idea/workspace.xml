@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="073a9639-2a3a-41c0-b17d-ead9c46535a2" name="Default Changelist" comment="install some react dependencies">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componnet/dashboard/DashBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnet/dashboard/DashBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componnet/logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnet/logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componnet/navlink/Navlink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnet/navlink/Navlink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componnet/user/UserSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnet/user/UserSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componnet/__test__/loginTest.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnet/__test__/loginTest.spec.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,13 +17,13 @@
     <session id="-1701043952">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="163" />
+          <entry key="project.closed" value="164" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="22" />
           <entry key="project.open.time.10" value="23" />
           <entry key="project.open.time.11" value="16" />
           <entry key="project.open.time.12" value="8" />
-          <entry key="project.open.time.13" value="10" />
+          <entry key="project.open.time.13" value="11" />
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="2" />
@@ -42,7 +37,7 @@
           <entry key="project.open.time.7" value="12" />
           <entry key="project.open.time.8" value="19" />
           <entry key="project.open.time.9" value="26" />
-          <entry key="project.opened" value="163" />
+          <entry key="project.opened" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="1298">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -130,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/componnet/user/UserSetting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
+            <state relative-caret-position="1056">
               <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
             </state>
           </provider>
@@ -140,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/componnet/dashboard/DashBoard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1100">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="46" />
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -148,7 +143,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
+            <state relative-caret-position="388">
               <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
@@ -157,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/componnet/navlink/Navlink.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -264,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,6 +365,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,11 +560,12 @@
       <workItem from="1549431261287" duration="1728000" />
       <workItem from="1549433092260" duration="1402000" />
       <workItem from="1550446760343" duration="1000" />
+      <workItem from="1550822788208" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199344000" />
+    <option name="totallyTimeSpent" value="199351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,8 +812,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="1298">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -837,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/componnet/user/UserSetting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
+        <state relative-caret-position="1056">
           <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
         </state>
       </provider>
@@ -845,14 +841,14 @@
     <entry file="file://$PROJECT_DIR$/src/componnet/dashboard/DashBoard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="46" />
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/componnet/navlink/Navlink.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -868,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
+        <state relative-caret-position="388">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>

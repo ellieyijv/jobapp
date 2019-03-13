@@ -38,14 +38,16 @@ ReactDOM.render(
            <BrowserRouter>
                 <div>
                     <AuthRoute></AuthRoute>
-                    <Switch>
-                        <Route path='/bossinfo' component={BossInfo}></Route>
-                        <Route path='/seekerinfo' component={SeekerInfo}></Route>
-                        <Route path='/login' component={Login}></Route>
-                        <Route path='/register' component={Register}></Route>
-                        <Route path='/chat/:user' component={Chat}></Route>
-                        <Route component ={DashBoard}></Route>
-                    </Switch>
+                        <Switch>
+
+                            <Route path='/bossinfo' component={BossInfo}></Route>
+                            <Route path='/seekerinfo' component={SeekerInfo}></Route>
+                            
+                            <Route path='/login' component={Login}></Route>
+                            <Route path='/register' component={Register}></Route>
+                            <Route path='/chat/:user' component={Chat}></Route>
+                            <Route component ={DashBoard}></Route>
+                        </Switch>
                 </div>
            </BrowserRouter>
         </Provider>),

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Card, WhiteSpace, WingBlank} from "antd-mobile";
 import {withRouter} from 'react-router-dom'
+import style from './style.sass'
 
 @withRouter
 class UserCard extends React.Component{
@@ -30,6 +31,7 @@ class UserCard extends React.Component{
                             title={v.user}
                             thumb={require(`../img/${v.avatar}.png`)}
                             extra={<div>{v.title}</div>}
+                           
                         ></Header>
                         
                         <Body>
